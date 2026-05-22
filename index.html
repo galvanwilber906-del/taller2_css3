@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistemas Operativos</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* MENÚ FLEXBOX */
+
+        .menu{
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            background-color: #1e1e1e;
+
+            padding: 20px;
+        }
+
+        .menu a{
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 18px;
+
+            transition: 0.3s;
+        }
+
+        .menu a:hover{
+
+            color: cyan;
+        }
+
+        /* PRESENTACIÓN */
+
+        .presentacion{
+
+            text-align: center;
+
+            padding: 40px;
+        }
+
+        .presentacion h1{
+
+            margin-bottom: 20px;
+
+            color: #222;
+        }
+
+        .presentacion p{
+
+            margin-bottom: 20px;
+
+            font-size: 18px;
+        }
+
+        .boton{
+
+            background-color: #0077ff;
+
+            color: white;
+
+            border: none;
+
+            padding: 15px 25px;
+
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            transition: 0.3s;
+        }
+
+        .boton:hover{
+
+            background-color: green;
+
+            transform: scale(1.1);
+        }
+
+        /* GRID */
+
+        .galeria{
+
+            display: grid;
+
+            grid-template-columns: repeat(3,1fr);
+
+            gap: 20px;
+
+            padding: 30px;
+        }
+
+        .caja{
+
+            background-color: white;
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+
+            transition: 0.3s;
+        }
+
+        .caja:hover{
+
+            transform: translateY(-5px);
+        }
+
+        .caja img{
+
+            width: 100%;
+
+            height: 200px;
+
+            object-fit: cover;
+        }
+
+        .contenido{
+
+            padding: 20px;
+        }
+
+        .contenido h2{
+
+            margin-bottom: 10px;
+
+            color: #0077ff;
+        }
+
+        .contenido p{
+
+            font-size: 15px;
+
+            color: #333;
+        }
+
+        /* RESPONSIVE */
+
+        @media(max-width:700px){
+
+            .menu{
+
+                flex-direction: column;
+
+                align-items: center;
+            }
+
+            .galeria{
+
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- MENÚ -->
+
+    <header>
+
+        <nav class="menu">
+
+            <a href="#">Windows</a>
+
+            <a href="#">Linux</a>
+
+            <a href="#">MacOS</a>
+
+            <a href="#">Android</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- PRESENTACIÓN -->
+
+    <section class="presentacion">
+
+        <h1>SISTEMAS OPERATIVOS</h1>
+
+        <p>
+
+            Los sistemas operativos son programas encargados
+            de administrar los recursos del computador y permitir
+            la interacción entre el usuario y el hardware.
+
+        </p>
+
+        <button class="boton">
+
+            Más Información
+
+        </button>
+
+    </section>
+
+
+    <!-- GALERÍA -->
+
+    <section class="galeria">
+
+        <!-- WINDOWS -->
+
+        <div class="caja">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg">
+
+            <div class="contenido">
+
+                <h2>Windows</h2>
+
+                <p>
+
+                    Sistema operativo desarrollado por Microsoft.
+                    Es uno de los más utilizados en computadores
+                    personales a nivel mundial.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LINUX -->
+
+        <div class="caja">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png">
+
+            <div class="contenido">
+
+                <h2>Linux</h2>
+
+                <p>
+
+                    Linux es un sistema operativo libre y de código
+                    abierto utilizado en servidores, computadores
+                    y dispositivos tecnológicos.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MACOS -->
+
+        <div class="caja">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg">
+
+            <div class="contenido">
+
+                <h2>MacOS</h2>
+
+                <p>
+
+                    Sistema operativo creado por Apple para sus
+                    computadores Mac. Se destaca por su diseño
+                    y rendimiento.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ANDROID -->
+
+        <div class="caja">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d7/Android_robot.svg">
+
+            <div class="contenido">
+
+                <h2>Android</h2>
+
+                <p>
+
+                    Android es un sistema operativo móvil desarrollado
+                    por Google y utilizado en millones de teléfonos
+                    inteligentes.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- UBUNTU -->
+
+        <div class="caja">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo-ubuntu_cof-orange-hex.svg">
+
+            <div class="contenido">
+
+                <h2>Ubuntu</h2>
+
+                <p>
+
+                    Ubuntu es una distribución de Linux conocida
+                    por ser fácil de usar y muy popular en el área
+                    educativa y profesional.
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- IOS -->
+
+        <div class="caja">
+
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/IOS_logo.svg">
+
+            <div class="contenido">
+
+                <h2>iOS</h2>
+
+                <p>
+
+                    iOS es el sistema operativo móvil de Apple,
+                    utilizado en dispositivos como iPhone y iPad.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
