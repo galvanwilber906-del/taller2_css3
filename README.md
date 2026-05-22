@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Taller CSS3</title>
+    <title>Sistemas Operativos - Taller CSS3</title>
 
     <style>
 
@@ -37,7 +37,7 @@
 
             gap: 20px;
 
-            background-color: #222;
+            background-color: #1e1e1e;
 
             padding: 20px;
         }
@@ -59,7 +59,7 @@
 
         .menu a:hover{
 
-            color: yellow;
+            color: cyan;
         }
 
 
@@ -77,7 +77,7 @@
 
             margin-bottom: 20px;
 
-            color: #333;
+            color: #222;
         }
 
 
@@ -93,7 +93,7 @@
 
         .boton{
 
-            background-color: blue;
+            background-color: #0077ff;
 
             color: white;
 
@@ -137,9 +137,9 @@
 
         .caja{
 
-            background-color: lightgray;
+            background-color: white;
 
-            padding: 60px;
+            padding: 50px;
 
             text-align: center;
 
@@ -148,6 +148,8 @@
             border-radius: 15px;
 
             transition: 0.3s;
+
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
         }
 
 
@@ -155,7 +157,7 @@
 
         .caja:hover{
 
-            background-color: orange;
+            background-color: #0077ff;
 
             color: white;
 
@@ -199,13 +201,13 @@
 
         <nav class="menu">
 
-            <a href="#">Inicio</a>
+            <a href="#">Windows</a>
 
-            <a href="#">Noticias</a>
+            <a href="#">Linux</a>
 
-            <a href="#">Galería</a>
+            <a href="#">MacOS</a>
 
-            <a href="#">Contacto</a>
+            <a href="#">Android</a>
 
         </nav>
 
@@ -217,18 +219,19 @@
 
     <section class="presentacion">
 
-        <h1>TECNOLOGÍA Y DESARROLLO WEB</h1>
+        <h1>SISTEMAS OPERATIVOS</h1>
 
         <p>
 
-            Página creada utilizando Flexbox, CSS Grid,
-            Hover y Responsive Design.
+            Página desarrollada utilizando Flexbox,
+            CSS Grid, Hover y Responsive Design
+            sobre el tema de Sistemas Operativos.
 
         </p>
 
         <button class="boton">
 
-            Más Información
+            Ver Información
 
         </button>
 
@@ -240,17 +243,17 @@
 
     <section class="galeria">
 
-        <div class="caja">HTML5</div>
+        <div class="caja">WINDOWS</div>
 
-        <div class="caja">CSS3</div>
+        <div class="caja">LINUX</div>
 
-        <div class="caja">JAVASCRIPT</div>
+        <div class="caja">MACOS</div>
 
-        <div class="caja">FLEXBOX</div>
+        <div class="caja">ANDROID</div>
 
-        <div class="caja">GRID</div>
+        <div class="caja">UBUNTU</div>
 
-        <div class="caja">RESPONSIVE</div>
+        <div class="caja">IOS</div>
 
     </section>
 
